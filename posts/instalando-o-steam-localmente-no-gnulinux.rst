@@ -27,6 +27,14 @@ A Receita
 Dependências
 ------------
 
+.. figure:: /images/instalando-o-steam-localmente-no-gnulinux-screenshot.png
+   :target: /images/instalando-o-steam-localmente-no-gnulinux-screenshot.png
+   :figwidth: 300 px
+   :align: right
+   :alt: Steam On Linux
+
+   Steam On Linux
+
 Use seu gerenciador de pacotes preferido e certifique-se que as seguintes dependências estão instaladas:
 
 * python

@@ -29,6 +29,14 @@ How-to
 Dependencies
 ------------
 
+.. figure:: /images/instalando-o-steam-localmente-no-gnulinux-screenshot.png
+   :target: /images/instalando-o-steam-localmente-no-gnulinux-screenshot.png
+   :figwidth: 300 px
+   :align: right
+   :alt: Steam On Linux
+
+   Steam On Linux
+
 First, with the help of you distro package manager make sure the following dependencies are installed:
 
 * python
