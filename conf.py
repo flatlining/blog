@@ -64,13 +64,13 @@ TRANSLATIONS = {
 # You should provide a key-value pair for each used language.
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ('/archive.html', 'Arquivo'),
-        ('/categories/index.html', 'Tags'),
+        ((('/archive.html', 'Arquivo'), ('/categories/index.html', 'Tags'),), 'Blog'),
+        ((('/stories/shockingly-big-ie6-warning/', 'Shockingly Big IE6 Warning'),), 'Projetos'),
         ('/rss.xml', 'RSS'),
     ),
     'en': (
-        ('/en/archive.html', 'Archive'),
-        ('/en/categories/index.html', 'Tags'),
+        ((('/en/archive.html', 'Archive'), ('/en/categories/index.html', 'Tags'),), 'Blog'),
+        ((('/en/stories/shockingly-big-ie6-warning/', 'Shockingly Big IE6 Warning'),), 'Projects'),
         ('/en/rss.xml', 'RSS'),
     ),
 }
