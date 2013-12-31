@@ -64,12 +64,12 @@ TRANSLATIONS = {
 # You should provide a key-value pair for each used language.
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ('/archive.html', 'Archives'),
+        ('/archive.html', 'Arquivo'),
         ('/categories/index.html', 'Tags'),
         ('/rss.xml', 'RSS'),
     ),
     'en': (
-        ('/en/archive.html', 'Archives'),
+        ('/en/archive.html', 'Archive'),
         ('/en/categories/index.html', 'Tags'),
         ('/en/rss.xml', 'RSS'),
     ),
@@ -396,7 +396,7 @@ COMMENT_SYSTEM_ID = ""
 # This can be disabled on a per-page/post basis by adding
 #    .. pretty_url: False
 # to the metadata
-# PRETTY_URLS = False
+PRETTY_URLS = True
 
 # If True, publish future dated posts right away instead of scheduling them.
 # Defaults to False.
@@ -551,7 +551,7 @@ SOCIAL_BUTTONS_CODE = ""
 # is served from the NetDNA CDN
 # Set this to False if you want to host your site without requiring access to
 # external resources.
-# USE_CDN = False
+USE_CDN = True
 
 # Extra things you want in the pages HEAD tag. This will be added right
 # before </HEAD>
@@ -611,7 +611,7 @@ SOCIAL_BUTTONS_CODE = ""
 TIMEZONE = 'America/Sao_Paulo'
 
 # If webassets is installed, bundle JS and CSS to make site loading faster
-# USE_BUNDLES = True
+USE_BUNDLES = True
 
 # Plugins you don't want to use. Be careful :-)
 # DISABLED_PLUGINS = ["render_galleries"]

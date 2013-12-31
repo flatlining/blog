@@ -20,17 +20,17 @@ Attention
     This articles was publish in two separeted post at the Pletax_ portal, `Gerenciando múltiplas versões do python com pythonbrew`_ and `Versionamento de bibliotecas python com virtualenv`_ (both in brazilian portuguese).
 
 Step by Step
-------------
+============
 
 Requirements
-************
+------------
 
 * An updated ubuntu_ instalation. This tutorial is based on the `quantal quetzal`_ release, but should work with other versions
 * An internet connection :)
 * Familiarity with terminal use
 
 Pythonbrew
-**********
+----------
 
 The pythonbrew_ is to python_ what rvm_ is to ruby_ (mostly). Facilitating the process of installation and management of multiple python_ instances on the users :bash:`$HOME` folder.
 
@@ -131,7 +131,7 @@ For a complete list of command use the application help:
     pythonbrew -h
 
 Virtualenv
-**********
+----------
 
 With virtualenv_ you can create isolated environments of development for python_, that is *bundles* of *modules* and *libraries* that can be activated and deactivated freely.
 
@@ -215,13 +215,16 @@ Keep in mind the the virtualenv_ environment is attached to the active python_ v
     For example: the **django143** environment create with the **2.7.3** version won't be available when the version **3.3.0** is active.
 
 Conclusion
-----------
+==========
 
 We can see that the use of pythonbrew_ and virtualenv_ together allow a great level of control over you development environments in a way that you can easily work with different version of the same library.
 
 Cheers!
 
 ----
+
+References
+==========
 
 .. [#] `Installing pythonbrew`_
 .. [#] `Using pythonbrew`_
