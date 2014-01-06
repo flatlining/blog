@@ -1,5 +1,7 @@
 *.py[cod]
 
+.pyenv-version
+
 .doit.db*
 
 cache
