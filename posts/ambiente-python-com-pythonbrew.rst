@@ -1,129 +1,130 @@
 .. link: 
-.. description: Como preparar um ambiente de desenvolvimento python no ubuntu de forma simples e direta
+.. description: A simple and direct approach on the creation of a python development environment using ubuntu and the pythonbrew and virtualenv tools
 .. category: python
-.. tags: linux, ubuntu, python, ambiente
+.. tags: linux, ubuntu, python, environment
 .. date: 2013/02/24 20:05:33
-.. title: Ambiente Python com Pythonbrew
-.. slug: ambiente-python-com-pythonbrew
+.. title: Python environment with Pythonbrew
+.. slug: python-environment-with-pythonbrew
+
 
 .. http://docutils.sourceforge.net/docs/user/rst/quickref.html
 
 .. role:: bash(code)
     :language: bash
 
-Neste artigo será mostrado de forma simples e direta como criar um ambiente de desenvolvimento python_ no ubuntu_ utilizando as ferramentas pythonbrew_ e virtualenv_.
+In this articles a simple and direct approach on the creation of a python_ development environment using ubuntu_ and the pythonbrew_ and virtualenv_ tools.
 
 .. TEASER_END
 
-Atenção
-    Este artigo foi publicado em dois posts separados no portal Pletax_, `Gerenciando múltiplas versões do python com pythonbrew`_ e `Versionamento de bibliotecas python com virtualenv`_.
+Attention
+    This articles was publish in two separeted post at the Pletax_ portal, `Gerenciando múltiplas versões do python com pythonbrew`_ and `Versionamento de bibliotecas python com virtualenv`_ (both in brazilian portuguese).
 
-Passo a Passo
-=============
+Step by Step
+============
 
-Requisitos
-----------
+Requirements
+------------
 
-* Uma instalação do ubuntu funcional e atualizada. Este tutorial é baseado na versão `quantal quetzal`_, porém deve funcionar igualmente em outras versões
-* Conexão ativa com a internet :)
-* Familiariedade com o uso do terminal
+* An updated ubuntu_ instalation. This tutorial is based on the `quantal quetzal`_ release, but should work with other versions
+* An internet connection :)
+* Familiarity with terminal use
 
 Pythonbrew
 ----------
 
-O pythonbrew_ está para o python_ de forma semelhante a como o rvm_ está para o ruby_. Ele facilita (e muito) a instalação e o gerenciamento de múltiplas instâncias do python_ no diretório :bash:`$HOME` do usuário.
+The pythonbrew_ is to python_ what rvm_ is to ruby_ (mostly). Facilitating the process of installation and management of multiple python_ instances on the users :bash:`$HOME` folder.
 
-Os seguintes comandos serão todos realizados em uma janela de terminal.
+All the following commands must be executed in a terminal window.
 
-Instalação [#]_
-^^^^^^^^^^^^^^^
+Installation [#]_
+^^^^^^^^^^^^^^^^^
 
-Primeiramente, para evitar qualquer problema com dependências, você deve instalar os seguintes pacotes no ubuntu:
+First of all install the required dependencies:
 
 .. code:: bash
 
-    sudo apt-get install curl build-essential libbz2-dev libsqlite3-dev zlib1g-dev libxml2 libxml2-dev libxslt1-dev libgdbm-dev libssl-dev tk-dev libexpat1-dev libncursesw5-dev
+ sudo apt-get install curl build-essential libbz2-dev libsqlite3-dev zlib1g-dev libxml2 libxml2-dev libxslt1-dev libgdbm-dev libssl-dev tk-dev libexpat1-dev libncursesw5-dev
 
-Então, para instalá-lo, entre com o comando:
+Then install it with the command:
 
 .. code:: bash
 
     curl -kL http://xrl.us/pythonbrewinstall | bash
 
-após a instalação abra o arquivo :bash:`~/.bashrc` no gedit com o comando:
+After the installation open :bash:`~/.bashrc` with gedit:
 
 .. code:: bash
 
     gedit ~/.bashrc
 
-e adicione a seguinte linha no final do arquivo:
+And add this line at the end of the file:
 
 .. code:: bash
 
     [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
 
-Feche e abra novamente a janela do terminal e o pythonbrew_ estará instalado e pronto para usar!
+Restart the terminal session (open and close the terminal window :D) and the pythonbrew_ will be ready to use!
 
-Utilização [#]_
-^^^^^^^^^^^^^^^
+How to use it [#]_
+^^^^^^^^^^^^^^^^^^
 
-Para começar vamos instalar uma versão do python em sua pasta de usuário. Para listar as versões disponíveis para instalação utilize o comando:
+First let's install a python_ version in your user folder. to list the available versions use the command:
 
 .. code:: bash
 
     pythonbrew list -k
 
-E para instalar, por exemplo, a versão 2.7.3, use:
+And to install, for example the version 2.7.3, use:
 
 .. code:: bash
 
     pythonbrew install Python-2.7.3
 
-ou somente:
+Or just:
 
 .. code:: bash
 
     pythonbrew install 2.7.3
 
-Aguarde a instalação. Para listar as versões instaladas entre com o comando:
+After the installation is done you can list the locally available version with:
 
 .. code:: bash
 
     pythonbrew list
 
-Se alguma das versões locais for a versão ativa ela estará marcada na lista com um ``*``.
+The active version will be marked with a ``*`` (no version marked means the system version is been used).
 
-.. _versão ativa:
+.. _active version:
 
-Existem duas maneiras de usar uma das versões instaladas:
+There are two ways of activating the instances:
 
 .. code:: bash
 
     pythonbrew use 2.3.7
 
-Ao utilizar o parâmetro :bash:`use` a versão selecionada permanecerá ativa somente na sessão atual do terminal.
+When using the :bash:`use` parameter the version will be activeted only to the current session.
 
-Ou você poderá utilizar o comando:
+Or you can use:
 
 .. code:: bash
 
     pythonbrew switch 2.7.3
 
-Ativando assim a versão **2.7.3** globalmente (para seu usuário).
+Activating the version **2.7.3** globally (for your user).
 
-Se desejar desinstalar uma versão local do python_ use o comando:
+To uninstall an instance enter the command:
 
 .. code:: bash
 
     pythonbrew uninstall 2.7.3
 
-E para retornar a usar a versão nativa do ubuntu_ desativando o pythonbrew_ use:
+And to rollback to the system version deactivating the pythonbrew_ use:
 
 .. code:: bash
 
     pythonbrew off
 
-Para uma lista completa dos comando disponíveis entre com:
+For a complete list of command use the application help:
 
 .. code:: bash
 
@@ -132,101 +133,101 @@ Para uma lista completa dos comando disponíveis entre com:
 Virtualenv
 ----------
 
-O virtualenv_ é uma ferramenta para criar ambientes de desenvolvimento isolados para o python_, ou seja, pacotes de *bibliotecas* e *dependências* independentes que podem ser alternados livremente.
+With virtualenv_ you can create isolated environments of development for python_, that is *bundles* of *modules* and *libraries* that can be activated and deactivated freely.
 
-Por exemplo, você poderia ter dois projetos, um dependente do django_ versão 1.4.3 e outro da 1.5, como manter as duas versões instaladas simultaneamente? Simples! Basta criar dois ambientes independentes com o virtualenv_ onde serão instaladas as dependências de cada projeto, bastando alternar entre eles dependendo do projeto em que você irá trabalhar.
+For example, if you have two django_ projects, one using version 1.4.3 and other version 1.5, You could create two virtualenv_ environments where all the correct dependencies of each project will be installed, and then activating the required environment depending on which project you are working.
 
-Instalação
-^^^^^^^^^^
+Installation
+^^^^^^^^^^^^
 
-Para nossa sorte o pythonbrew_ é facilmente integrado ao virtualenv_.
+The pythonbrew_ is easily integrated with virtualenv_.
 
-.. _ativá-lo:
+.. _activate it:
 
-Primeiro certifique-se de que a `versão ativa`_ do python_ é a que você quer utilizar e então ative o virtualenv_ para ela:
+First make sure that the `active version`_ of python is the one that you want to use, then active the virtualenv_:
 
 .. code:: bash
 
     pythonbrew venv init
 
-E aguarde a instalação.
+And wait for the installation to finish.
 
-Utilização
-^^^^^^^^^^
+How to use it
+^^^^^^^^^^^^^
 
-Para criar um novo ambiente utilize, por exemplo:
+To create a new environment use:
 
 .. code:: bash
 
     pythonbrew venv create django143
 
-Entre com o seguinte comando para listar todos os ambientes disponíveis para a versão ativa do python_:
+Then use the following command to list the available environments to the current python_ instance:
 
 .. code:: bash
 
     pythonbrew venv list
 
-Ative um ambiente com o comando:
+And to activate a specific environment:
 
 .. code:: bash
 
     pythonbrew venv use django143
 
-Note que o nome do ambiente aparecerá ao lado da prompt de comando, apartir de agora todas as mudanças de bibliotecas afetarão somente o ambiente ativo, por exemplo:
+Check that the current environment is displayed between parentesis beside the command prompt. From now on all libraries installed will only affect this environment, for example:
 
 .. code:: bash
 
     pip install Django==1.4.3
 
-Irá instalar a versão **1.4.3** do django_ somente no ambiente **django143**.
+Will install django_ version **1.4.3** only in the environment **django143**.
 
-Para sair de um ambiente e retornar para o padrão basta entrar com o comando
+To close an environment use:
 
 .. code:: bash
 
     deactivate
 
-Outros comandos também estão disponíveis, como:
+Other usefull commands:
 
-Deletar um ambiente:
+Delete an environment:
 
 .. code:: bash
 
     pythonbrew venv delete [enviroment]
 
-Renomear um ambiente:
+Rename an environment:
 
 .. code:: bash
 
     pythonbrew venv rename [enviroment] [new_name]
 
-Clonar um ambiente:
+Clone an environment:
 
 .. code:: bash
 
     pythonbrew venv clone [enviroment] [clone_name]
 
-Observações
-^^^^^^^^^^^
+Observations
+^^^^^^^^^^^^
 
-Tenha em mente que o ambiente do virtualenv_ está atrelada à versão do python_ ativa e não estará disponível para outras versões. e.g.:
+Keep in mind the the virtualenv_ environment is attached to the active python_ version and won't be available for other versions. e.g.:
 
-    O ambiente **django143** criado com a versão **2.7.3** do python ativa não estará disponível quando a versão **3.3.0** (ou qualquer outra que não for a 2.7.3) for a ativa.
+    For example: the **django143** environment create with the **2.7.3** version won't be available when the version **3.3.0** is active.
 
-Conclusão
-=========
+Conclusion
+==========
 
-Vemos que a utilização do pythonbrew_ em conjunto com o virtualenv_ permite um controle minucioso sobre seu ambiente de desenvolvimento python_, permitindo controle total das bibliotecas e suas versões instaladas, permitindo flexibilidade no trabalho com diversos projetos distintos.
+We can see that the use of pythonbrew_ and virtualenv_ together allow a great level of control over you development environments in a way that you can easily work with different version of the same library.
 
-Obrigado, e até mais!
+Cheers!
 
 ----
 
-Referências
-===========
+References
+==========
 
-.. [#] `Instalação pythonbrew`_
-.. [#] `Utilização pythonbrew`_
+.. [#] `Installing pythonbrew`_
+.. [#] `Using pythonbrew`_
 
 .. _Pletax: http://www.pletax.com/
 .. _Gerenciando múltiplas versões do python com pythonbrew: http://www.pletax.com/2013/03/gerenciando-multiplas-versoes-do-python-com-pythonbrew/
@@ -239,5 +240,5 @@ Referências
 .. _rvm: http://rvm.io/
 .. _ruby: http//www.ruby-lang.org/
 .. _django: http://www.djangoproject.com/
-.. _Instalação pythonbrew: http://github.com/utahta/pythonbrew#installation
-.. _Utilização pythonbrew: http://github.com/utahta/pythonbrew#usage
+.. _Installing pythonbrew: http://github.com/utahta/pythonbrew#installation
+.. _Using pythonbrew: http://github.com/utahta/pythonbrew#usage

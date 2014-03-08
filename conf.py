@@ -48,14 +48,14 @@ BLOG_DESCRIPTION = "My Kung Fu Is Better Than Yours…"
 # in the default language will be shown instead.
 
 # What is the default language?
-DEFAULT_LANG = "pt_br"
+DEFAULT_LANG = "en"
 
 # What other languages do you have?
 # The format is {"translationcode" : "path/to/translation" }
 # the path will be used as a prefix for the generated pages location
 TRANSLATIONS = {
     DEFAULT_LANG: "",
-    "en": "./en",
+    "pt_br": "./pt",
     # Example for another language:
     # "es": "./es",
 }
@@ -64,14 +64,14 @@ TRANSLATIONS = {
 # You should provide a key-value pair for each used language.
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ((('/archive.html', 'Arquivo'), ('/categories/index.html', 'Tags'),), 'Blog'),
-        ((('/stories/shockingly-big-ie6-warning/', 'Shockingly Big IE6 Warning'),), 'Projetos'),
+        ((('/archive.html', 'Archive'), ('/categories/index.html', 'Tags'),), 'Blog'),
+        ((('/stories/shockingly-big-ie6-warning/', 'Shockingly Big IE6 Warning'),), 'Projects'),
         ('/rss.xml', 'RSS'),
     ),
-    'en': (
-        ((('/en/archive.html', 'Archive'), ('/en/categories/index.html', 'Tags'),), 'Blog'),
-        ((('/en/stories/shockingly-big-ie6-warning/', 'Shockingly Big IE6 Warning'),), 'Projects'),
-        ('/en/rss.xml', 'RSS'),
+    'pt_br': (
+        ((('/pt/archive.html', 'Arquivo'), ('/pt/categories/index.html', 'Tags'),), 'Blog'),
+        ((('/pt/stories/shockingly-big-ie6-warning/', 'Shockingly Big IE6 Warning'),), 'Projetos'),
+        ('/pt/rss.xml', 'RSS'),
     ),
 }
 
@@ -329,7 +329,7 @@ INDEX_TEASERS = True
 # READ_MORE_LINK = '<p class="more"><a href="{link}">{read_more}…</a></p>'
 
 # A HTML fragment describing the license, for the sidebar.
-LICENSE = """<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.pt_BR"><img alt="Licença Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">schertel.co</span> de <a xmlns:cc="http://creativecommons.org/ns#" href="http://schertel.co" property="cc:attributionName" rel="cc:attributionURL">Matias Schertel</a> é licenciado sob uma <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.pt_BR">Licença Creative Commons Atribuição-CompartilhaIgual 3.0 Não Adaptada</a>."""
+LICENSE = """<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">schertel.co</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://blog.schertel.co/" property="cc:attributionName" rel="cc:attributionURL">schertel.co</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>."""
 # I recommend using the Creative Commons' wizard:
 # http://creativecommons.org/choose/
 # LICENSE = """
@@ -480,7 +480,7 @@ SOCIAL_BUTTONS_CODE = ""
 # RSS_LINK = None
 
 # Show only teasers in the RSS feed? Default to True
-# RSS_TEASERS = True
+RSS_TEASERS = False
 
 # A search form to search this site, for the sidebar. You can use a google
 # custom search (http://www.google.com/cse/)
