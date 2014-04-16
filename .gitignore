@@ -1,6 +1,7 @@
 *.py[cod]
 
 .pyenv-version
+.python-version
 
 .doit.db*
 

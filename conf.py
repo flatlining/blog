@@ -56,8 +56,6 @@ DEFAULT_LANG = "en"
 TRANSLATIONS = {
     DEFAULT_LANG: "",
     "pt_br": "./pt",
-    # Example for another language:
-    # "es": "./es",
 }
 
 # Links for the sidebar / navigation bar.

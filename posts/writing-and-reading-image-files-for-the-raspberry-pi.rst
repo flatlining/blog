@@ -57,7 +57,7 @@ To write an image file to a SD card follow these steps:
 
    .. code:: bash
 
-       sudo dd bs=1M if=**archlinux-hf-\*.img** of=**/dev/mmcblk0**
+       sudo dd bs=1M if=archlinux-hf-*.img of=/dev/mmcblk0
 
 8. It could take a while, so *relax*.
 
@@ -70,12 +70,6 @@ To write an image file to a SD card follow these steps:
 10. Remove it, insert it in the Pi.
 
 11. Have fun!
-
-.. _Raspberry Pi: http://www.raspberrypi.org/
-.. _ARM: https://en.wikipedia.org/wiki/ARM_architecture
-.. _Arch Linux: http://archlinuxarm.org/platforms/armv6/raspberry-pi
-.. _Image file: http://archlinuxarm.org/os/ArchLinuxARM-rpi-latest.zip
-.. _MD5 sum: http://archlinuxarm.org/os/ArchLinuxARM-rpi-latest.zip.md5
 
 Reading the image
 =================
@@ -96,7 +90,7 @@ And backing it up is pretty similar to how we write it in the first place:
 
    .. code:: bash
 
-       sudo dd bs=1M if=**/dev/path_to_card** of=**mylinux.image**
+       sudo dd bs=1M if=/dev/path_to_card of=mylinux.image
 
 5. Execute the :bash:`sync` to flush the cache:
 
@@ -114,3 +108,9 @@ Attention
 ----
 
 .. [#] Each system have it's own minimum space spec, make sure to check it in the systems site
+
+.. _Raspberry Pi: http://www.raspberrypi.org/
+.. _ARM: https://en.wikipedia.org/wiki/ARM_architecture
+.. _Arch Linux: http://archlinuxarm.org/platforms/armv6/raspberry-pi
+.. _Image file: http://archlinuxarm.org/os/ArchLinuxARM-rpi-latest.zip
+.. _MD5 sum: http://archlinuxarm.org/os/ArchLinuxARM-rpi-latest.zip.md5
