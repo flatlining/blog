@@ -253,7 +253,7 @@ CACHE_FOLDER = 'cache'
 # Use an external gzip command? None means no.
 # Example: GZIP_COMMAND = "pigz -k {filename}"
 # GZIP_COMMAND = None
-# Make sure the server does not return a "Accept-Ranges: bytes" header for 
+# Make sure the server does not return a "Accept-Ranges: bytes" header for
 # files compressed by this option! OR make sure that a ranged request does not
 # return partial content of another representation for these resources. Do not
 # use this feature if you do not understand what this means.
@@ -283,8 +283,7 @@ GALLERY_PATH = "galleries"
 # translated
 
 # Name of the theme to use.
-# THEME = "bootstrap3"
-THEME = "cosmo"
+THEME = "bootstrap3"
 
 # Color scheme to be used for code blocks. If your theme provides
 # "assets/css/code.css" this is ignored.
@@ -347,7 +346,7 @@ CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
 # To use comments, you can choose between different third party comment
 # systems, one of "disqus", "livefyre", "intensedebate", "moot",
 #                 "googleplus" or "facebook"
-COMMENT_SYSTEM = ""
+COMMENT_SYSTEM = "googleplus"
 # And you also need to add your COMMENT_SYSTEM_ID which
 # depends on what comment system you use. The default is
 # "nikolademo" which is a test account for Disqus. More information
