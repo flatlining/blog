@@ -15,6 +15,8 @@ To install Microsoft core fonts easy using :bash:`apt-get` enter the following i
 
     sudo apt-get install ttf-mscorefonts-installer
 
+.. TEASER_END
+
 This command will install the following true type fonts commonly present in Windows:
 
 * Andale Mono
