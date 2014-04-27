@@ -1,15 +1,15 @@
-.. title: Install Microsoft Windows fonts in Ubuntu
-.. slug: install-microsoft-windows-fonts-in-ubuntu
+.. title: Instalando fontes do Microsoft Windows no Ubuntu
+.. slug: instalando-fontes-do-microsoft-windows-no-ubuntu
 .. date: 2014/04/26 23:08:23
-.. tags: linux, ubuntu, font
+.. tags: linux, ubuntu, fonte
 .. link: http://packages.ubuntu.com/lucid/ttf-mscorefonts-installer
-.. description: Easily install Microsoft Windows fonts in Ubuntu using apt-get
+.. description: Instale facilmente as fontes do Microsoft Windows no Ubuntu utilizando o apt-get
 .. type: text
 
 .. role:: bash(code)
     :language: bash
 
-To install Microsoft core fonts easy using :bash:`apt-get` enter the following in a terminal window:
+Para instalar as principais fontes do Windows usando :bash:`apt-get` execute o seguinte código em uma janela de terminal:
 
 .. code:: bash
 
@@ -17,7 +17,7 @@ To install Microsoft core fonts easy using :bash:`apt-get` enter the following i
 
 .. TEASER_END
 
-This command will install the following true type fonts commonly present in Windows:
+Esse commando instalara as seguintes fontes comunmente presentes no Windows:
 
 * Andale Mono
 * Arial Black
@@ -31,4 +31,4 @@ This command will install the following true type fonts commonly present in Wind
 * Verdana (Bold, Italic, Bold Italic)
 * Webdings
 
-You can also use the **Ubuntu Software Center**.
+O **Ubuntu Software Center** também pode ser utilizado.
