@@ -1,7 +1,7 @@
 .. title: GIT: Adding files to your last commit!
 .. slug: git-adding-files-to-your-last-commit
 .. date: 2014/04/26 23:51:44
-.. tags: git
+.. tags: git, development
 .. link: http://lostechies.com/derickbailey/2010/06/09/git-oops-i-forgot-to-add-those-new-files-before-committing/
 .. description: Easily add missing files t your last GIT commit
 .. type: text
