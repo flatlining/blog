@@ -11,12 +11,12 @@
 .. http://rst.ninjs.org/
 .. https://gist.github.com/dupuy/1855764
 
-.. role:: bash(code)
-    :language: bash
+.. role:: console(code)
+    :language: console
 
 Steam_ for GNU/Linux has been around for a while now, and thanks to the efforst of Valve_ more and more games are been released to the open-source OS!
 
-But since I'm a bit paranoid, I choose to install it at my :bash:`$HOME` folder, avoiding any unnecessary permissions (*root-less* installation).
+But since I'm a bit paranoid, I choose to install it at my :console:`$HOME` folder, avoiding any unnecessary permissions (*root-less* installation).
 
 I've been using it like this for quite a while, with no noticeable downside.
 
@@ -52,29 +52,29 @@ Installation
 
 Then, get the installer from the `official site <http://store.steampowered.com/about/>`_ or download the `.deb`_ from Valve's `repository <http://media.steampowered.com/client/installer/steam.deb>`_ as pointed out in their github page [1]_
 
-Copy the installer to a temporary folder (e.g.: :bash:`~/temp/`), and extract it:
+Copy the installer to a temporary folder (e.g.: :console:`~/temp/`), and extract it:
 
-.. code:: bash
+.. code:: console
 
-    ar x steam.deb
+    $ ar x steam.deb
 
-Extract the :bash:`data.tar.gz` file:
+Extract the :console:`data.tar.gz` file:
 
-.. code:: bash
+.. code:: console
 
-    tar xf data.tar.gz
+    $ tar xf data.tar.gz
 
-Now extract Steam_ to it's final destination folder (e.g.: :bash:`~/steam/`):
+Now extract Steam_ to it's final destination folder (e.g.: :console:`~/steam/`):
 
-.. code:: bash
+.. code:: console
 
-    tar xf ~/temp/usr/lib/steam/bootstraplinux_ubuntu12_32.tar.xz ~/steam/
+    $ tar xf ~/temp/usr/lib/steam/bootstraplinux_ubuntu12_32.tar.xz ~/steam/
 
-Go to the directory :bash:`~/steam/` and execute Steam_:
+Go to the directory :console:`~/steam/` and execute Steam_:
 
-.. code:: bash
+.. code:: console
 
-    ./steam.sh
+    $ ./steam.sh
 
 In the first run all the necessary files will be downloaded and soon it will be ready for game!
 

@@ -6,14 +6,14 @@
 .. description: Instale facilmente as fontes do Microsoft Windows no Ubuntu utilizando o apt-get
 .. type: text
 
-.. role:: bash(code)
-    :language: bash
+.. role:: console(code)
+    :language: console
 
-Para instalar as principais fontes do Windows usando :bash:`apt-get` execute o seguinte código em uma janela de terminal:
+Para instalar as principais fontes do Windows usando :console:`apt-get` execute o seguinte código em uma janela de terminal:
 
-.. code:: bash
+.. code:: console
 
-    sudo apt-get install ttf-mscorefonts-installer
+    $ sudo apt-get install ttf-mscorefonts-installer
 
 .. TEASER_END
 
@@ -31,4 +31,4 @@ Esse commando instalara as seguintes fontes comunmente presentes no Windows:
 * Verdana (Bold, Italic, Bold Italic)
 * Webdings
 
-O **Ubuntu Software Center** também pode ser utilizado.
+.. tip:: O **Ubuntu Software Center** também pode ser utilizado.

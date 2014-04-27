@@ -11,8 +11,8 @@
 .. http://elinux.org/ArchLinux_Install_Guide
 .. http://hreikin.wordpress.com/2013/12/22/arch-linux-raspberry-pi-install-guide/comment-page-1/
 
-.. role:: bash(code)
-    :language: bash
+.. role:: console(code)
+    :language: console
 
 On the :doc:`previous <writing-and-reading-image-files-for-the-raspberry-pi>` post we saw how to write the `Arch Linux ARM`_ to be use with the `Raspberry Pi`_.
 

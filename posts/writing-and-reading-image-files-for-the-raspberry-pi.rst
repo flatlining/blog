@@ -9,8 +9,8 @@
 
 .. http://elinux.org/RPi_Easy_SD_Card_Setup
 
-.. role:: bash(code)
-    :language: bash
+.. role:: console(code)
+    :language: console
 
 The `Raspberry Pi`_ is this small cool ARM based board that you can use for endless projects and is compatible with many GNU/Linux distributions!
 
@@ -29,7 +29,6 @@ To write an image file to a SD card follow these steps:
 1. Download the the latest zip containing the image:
 
    * `Image file`_
-
    * `MD5 sum`_
 
 2. Extract the zip file to your hard drive, giving you the image **archlinux-hf-\*.img**.
@@ -40,7 +39,7 @@ To write an image file to a SD card follow these steps:
 
 5. Find out the path to the card:
 
-   a) With the command :bash:`df -h` list all mounted partitions.
+   a) With the command :console:`df -h` list all mounted partitions.
 
    b) Your card partition will be listed as something like **/dev/mmcblk0p1**.
 
@@ -48,23 +47,23 @@ To write an image file to a SD card follow these steps:
 
 6. Unmount the card with the command:
 
-   .. code:: bash
+   .. code:: console
 
-       sudo umount /dev/mmcblk0
+       $ sudo umount /dev/mmcblk0
 
 7. To write the image to the card use:
 
-   .. code:: bash
+   .. code:: console
 
-       sudo dd bs=1M if=archlinux-hf-*.img of=/dev/mmcblk0
+       $ sudo dd bs=1M if=archlinux-hf-*.img of=/dev/mmcblk0
 
 8. It could take a while, so *relax*.
 
-9. After is done run the command :bash:`sync` to ensure the cache is flushed and it safe to remove the card:
+9. After is done run the command :console:`sync` to ensure the cache is flushed and it safe to remove the card:
 
-   .. code:: bash
+   .. code:: console
 
-       sudo sync
+       $ sudo sync
 
 10. Remove it, insert it in the Pi.
 
@@ -81,27 +80,27 @@ And backing it up is pretty similar to how we write it in the first place:
 
 1. Insert the card with your system image in your computer.
 
-2. Like when writing your image, use the :bash:`df -h` command to find the path to the card.
+2. Like when writing your image, use the :console:`df -h` command to find the path to the card.
 
-3. Unmount it with :bash:`sudo umount /dev/path_to_card`.
+3. Unmount it with :console:`sudo umount /dev/path_to_card`.
 
-4. Now, use the :bash:`dd` command to write an image of the card to a file:
+4. Now, use the :console:`dd` command to write an image of the card to a file:
 
-   .. code:: bash
+   .. code:: console
 
-       sudo dd bs=1M if=/dev/path_to_card of=mylinux.image
+       $ sudo dd bs=1M if=/dev/path_to_card of=mylinux.image
 
-5. Execute the :bash:`sync` to flush the cache:
+5. Execute the :console:`sync` to flush the cache:
 
-   .. code:: bash
+   .. code:: console
 
-       sudo sync
+       $ sudo sync
 
 6. Remove your card.
 
 That's it! Now you have a full backup of your customized system, if you have any problem just write it to a card line we did in the first part of this article and it will be as good as new!
 
-Attention
+.. attention::
     The generated image can only be written to a card with the same (or larger) size, so the backup of a 4GB card can be written to a 8GB card, but not to a 2GB one.
 
 ----

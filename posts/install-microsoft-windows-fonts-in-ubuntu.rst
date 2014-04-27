@@ -6,14 +6,14 @@
 .. description: Easily install Microsoft Windows fonts in Ubuntu using apt-get
 .. type: text
 
-.. role:: bash(code)
-    :language: bash
+.. role:: console(code)
+    :language: console
 
-To install Microsoft core fonts easy using :bash:`apt-get` enter the following in a terminal window:
+To install Microsoft core fonts easy using :console:`apt-get` enter the following in a terminal window:
 
-.. code:: bash
+.. code:: console
 
-    sudo apt-get install ttf-mscorefonts-installer
+    $ sudo apt-get install ttf-mscorefonts-installer
 
 .. TEASER_END
 
@@ -31,4 +31,4 @@ This command will install the following true type fonts commonly present in Wind
 * Verdana (Bold, Italic, Bold Italic)
 * Webdings
 
-You can also use the **Ubuntu Software Center**.
+.. tip:: You can also use the **Ubuntu Software Center**.
