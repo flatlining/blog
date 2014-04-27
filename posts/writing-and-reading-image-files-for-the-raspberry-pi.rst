@@ -1,10 +1,9 @@
 .. title: Writing and reading image files for the Raspberry Pi
 .. slug: writing-and-reading-image-files-for-the-raspberry-pi
 .. date: 2014/03/08 18:24:16
-.. category: raspberry-pi
-.. tags: raspberry pi, linux
-.. link: 
-.. description: 
+.. tags: raspberry pi, linux, OS
+.. link:
+.. description:
 .. type: text
 
 

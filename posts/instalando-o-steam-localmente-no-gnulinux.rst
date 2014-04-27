@@ -1,6 +1,5 @@
 .. link: http://steamcommunity.com/app/221410/discussions/7/846939071149987459/#c846939071182282142
 .. description: Tutorial de como instala o Steam na pasta home do seu usuário no linux, evitando assim o acesso a permissões desnecessárias
-.. category: games
 .. tags: linux, games, steam
 .. date: 2013/06/24 00:29:46
 .. title: Installing Steam locally on GNU/Linux

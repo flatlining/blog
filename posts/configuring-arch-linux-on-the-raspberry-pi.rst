@@ -1,10 +1,9 @@
 .. title: Configuring Arch Linux on the Raspberry Pi
 .. slug: configuring-arch-linux-on-the-raspberry-pi
 .. date: 2014/04/09 22:51:43
-.. category: raspberry-pi
-.. tags: arch, linux, draft
-.. link: 
-.. description: 
+.. tags: raspberry pi, arch, linux, draft
+.. link:
+.. description:
 .. type: text
 
 

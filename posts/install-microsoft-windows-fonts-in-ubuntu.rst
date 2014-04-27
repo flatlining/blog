@@ -1,8 +1,7 @@
 .. title: Install Microsoft Windows fonts in Ubuntu
 .. slug: install-microsoft-windows-fonts-in-ubuntu
 .. date: 2014/04/26 23:08:23
-.. category: linux
-.. tags: ubuntu, windows, font
+.. tags: linux, ubuntu, font
 .. link: http://packages.ubuntu.com/lucid/ttf-mscorefonts-installer
 .. description: Easily install Microsoft Windows fonts in Ubuntu using apt-get
 .. type: text
