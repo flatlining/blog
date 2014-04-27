@@ -8,8 +8,8 @@
 
 .. http://docutils.sourceforge.net/docs/user/rst/quickref.html
 
-.. role:: bash(code)
-    :language: bash
+.. role:: console(code)
+    :language: console
 
 In this articles a simple and direct approach on the creation of a python_ development environment using ubuntu_ and the pythonbrew_ and virtualenv_ tools.
 
@@ -31,7 +31,7 @@ Requirements
 Pythonbrew
 ----------
 
-The pythonbrew_ is to python_ what rvm_ is to ruby_ (mostly). Facilitating the process of installation and management of multiple python_ instances on the users :bash:`$HOME` folder.
+The pythonbrew_ is to python_ what rvm_ is to ruby_ (mostly). Facilitating the process of installation and management of multiple python_ instances on the users :console:`$HOME` folder.
 
 All the following commands must be executed in a terminal window.
 
@@ -40,25 +40,25 @@ Installation [#]_
 
 First of all install the required dependencies:
 
-.. code:: bash
+.. code:: console
 
- sudo apt-get install curl build-essential libbz2-dev libsqlite3-dev zlib1g-dev libxml2 libxml2-dev libxslt1-dev libgdbm-dev libssl-dev tk-dev libexpat1-dev libncursesw5-dev
+    $ sudo apt-get install curl build-essential libbz2-dev libsqlite3-dev zlib1g-dev libxml2 libxml2-dev libxslt1-dev libgdbm-dev libssl-dev tk-dev libexpat1-dev libncursesw5-dev
 
 Then install it with the command:
 
-.. code:: bash
+.. code:: console
 
-    curl -kL http://xrl.us/pythonbrewinstall | bash
+    $ curl -kL http://xrl.us/pythonbrewinstall | bash
 
-After the installation open :bash:`~/.bashrc` with gedit:
+After the installation open :console:`~/.bashrc` with gedit:
 
-.. code:: bash
+.. code:: console
 
-    gedit ~/.bashrc
+    $ gedit ~/.bashrc
 
 And add this line at the end of the file:
 
-.. code:: bash
+.. code:: console
 
     [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
 
@@ -69,27 +69,27 @@ How to use it [#]_
 
 First let's install a python_ version in your user folder. to list the available versions use the command:
 
-.. code:: bash
+.. code:: console
 
-    pythonbrew list -k
+    $ pythonbrew list -k
 
 And to install, for example the version 2.7.3, use:
 
-.. code:: bash
+.. code:: console
 
-    pythonbrew install Python-2.7.3
+    $ pythonbrew install Python-2.7.3
 
 Or just:
 
-.. code:: bash
+.. code:: console
 
-    pythonbrew install 2.7.3
+    $ pythonbrew install 2.7.3
 
 After the installation is done you can list the locally available version with:
 
-.. code:: bash
+.. code:: console
 
-    pythonbrew list
+    $ pythonbrew list
 
 The active version will be marked with a ``*`` (no version marked means the system version is been used).
 
@@ -97,37 +97,37 @@ The active version will be marked with a ``*`` (no version marked means the syst
 
 There are two ways of activating the instances:
 
-.. code:: bash
+.. code:: console
 
-    pythonbrew use 2.3.7
+    $ pythonbrew use 2.3.7
 
-When using the :bash:`use` parameter the version will be activeted only to the current session.
+When using the :console:`use` parameter the version will be activeted only to the current session.
 
 Or you can use:
 
-.. code:: bash
+.. code:: console
 
-    pythonbrew switch 2.7.3
+    $ pythonbrew switch 2.7.3
 
 Activating the version **2.7.3** globally (for your user).
 
 To uninstall an instance enter the command:
 
-.. code:: bash
+.. code:: console
 
-    pythonbrew uninstall 2.7.3
+    $ pythonbrew uninstall 2.7.3
 
 And to rollback to the system version deactivating the pythonbrew_ use:
 
-.. code:: bash
+.. code:: console
 
-    pythonbrew off
+    $ pythonbrew off
 
 For a complete list of command use the application help:
 
-.. code:: bash
+.. code:: console
 
-    pythonbrew -h
+    $ pythonbrew -h
 
 Virtualenv
 ----------
@@ -145,9 +145,9 @@ The pythonbrew_ is easily integrated with virtualenv_.
 
 First make sure that the `active version`_ of python is the one that you want to use, then active the virtualenv_:
 
-.. code:: bash
+.. code:: console
 
-    pythonbrew venv init
+    $ pythonbrew venv init
 
 And wait for the installation to finish.
 
@@ -156,62 +156,60 @@ How to use it
 
 To create a new environment use:
 
-.. code:: bash
+.. code:: console
 
-    pythonbrew venv create django143
+    $ pythonbrew venv create django143
 
 Then use the following command to list the available environments to the current python_ instance:
 
-.. code:: bash
+.. code:: console
 
-    pythonbrew venv list
+    $ pythonbrew venv list
 
 And to activate a specific environment:
 
-.. code:: bash
+.. code:: console
 
-    pythonbrew venv use django143
+    $ pythonbrew venv use django143
 
 Check that the current environment is displayed between parentesis beside the command prompt. From now on all libraries installed will only affect this environment, for example:
 
-.. code:: bash
+.. code:: console
 
-    pip install Django==1.4.3
+    $ pip install Django==1.4.3
 
 Will install django_ version **1.4.3** only in the environment **django143**.
 
 To close an environment use:
 
-.. code:: bash
+.. code:: console
 
-    deactivate
+    $ deactivate
 
 Other usefull commands:
 
 Delete an environment:
 
-.. code:: bash
+.. code:: console
 
-    pythonbrew venv delete [enviroment]
+    $ pythonbrew venv delete [enviroment]
 
 Rename an environment:
 
-.. code:: bash
+.. code:: console
 
-    pythonbrew venv rename [enviroment] [new_name]
+    $ pythonbrew venv rename [enviroment] [new_name]
 
 Clone an environment:
 
-.. code:: bash
+.. code:: console
 
-    pythonbrew venv clone [enviroment] [clone_name]
+    $ pythonbrew venv clone [enviroment] [clone_name]
 
-Observations
-^^^^^^^^^^^^
+.. attention::
+    Keep in mind the the virtualenv_ environment is attached to the active python_ version and won't be available for other versions. e.g.:
 
-Keep in mind the the virtualenv_ environment is attached to the active python_ version and won't be available for other versions. e.g.:
-
-    For example: the **django143** environment create with the **2.7.3** version won't be available when the version **3.3.0** is active.
+    The **django143** environment create with the **2.7.3** version won't be available when the version **3.3.0** is active.
 
 Conclusion
 ==========
