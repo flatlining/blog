@@ -1,7 +1,7 @@
 .. title: Use WebP images in your site using .htaccess
 .. slug: use-webp-images-in-your-site-using-htaccess
 .. date: 2014/04/27 23:27:27
-.. tags: web, development, htaccess, draft
+.. tags: web, development, htaccess
 .. link: https://developers.google.com/speed/webp/
 .. description: How to serve webp images in your site to supported browser using .htaccess
 .. type: text
