@@ -235,7 +235,7 @@ SHOW_UNTRANSLATED_POSTS = False
 
 # If TAG_PAGES_ARE_INDEXES is set to True, each tag's page will contain
 # the posts themselves. If set to False, it will be just a list of links.
-# TAG_PAGES_ARE_INDEXES = False
+TAG_PAGES_ARE_INDEXES = True
 
 # Final location for the main blog page and sibling paginated pages is
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
@@ -499,7 +499,7 @@ COMMENT_SYSTEM_ID = ""
 # it will instead /foo/default.html => /foo)
 # (Note: This was briefly STRIP_INDEX_HTML in v 5.4.3 and 5.4.4)
 # Default = False
-# STRIP_INDEXES = False
+STRIP_INDEXES = True
 
 # Should the sitemap list directories which only include other directories
 # and no files.
@@ -520,7 +520,7 @@ COMMENT_SYSTEM_ID = ""
 # This can be disabled on a per-page/post basis by adding
 #    .. pretty_url: False
 # to the metadata
-PRETTY_URLS = False
+PRETTY_URLS = True
 
 # If True, publish future dated posts right away instead of scheduling them.
 # Defaults to False.
@@ -625,20 +625,20 @@ RSS_TEASERS = False
 # This search form works for any site and looks good in the "site" theme where
 # it appears on the navigation bar:
 #
-# SEARCH_FORM = """
-# <!-- Custom search -->
-# <form method="get" id="search" action="//duckduckgo.com/"
-#  class="navbar-form pull-left">
-# <input type="hidden" name="sites" value="%s"/>
-# <input type="hidden" name="k8" value="#444444"/>
-# <input type="hidden" name="k9" value="#D51920"/>
-# <input type="hidden" name="kt" value="h"/>
-# <input type="text" name="q" maxlength="255"
-#  placeholder="Search&hellip;" class="span2" style="margin-top: 4px;"/>
-# <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
-# </form>
-# <!-- End of custom search -->
-# """ % SITE_URL
+SEARCH_FORM = """
+<!-- Custom search -->
+<form method="get" id="search" action="//duckduckgo.com/"
+ class="navbar-form pull-left">
+<input type="hidden" name="sites" value="%s"/>
+<input type="hidden" name="k8" value="#444444"/>
+<input type="hidden" name="k9" value="#D51920"/>
+<input type="hidden" name="kt" value="h"/>
+<input type="text" name="q" maxlength="255"
+ placeholder="Search&hellip;" class="span2" style="margin-top: 4px;"/>
+<input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
+</form>
+<!-- End of custom search -->
+""" % SITE_URL
 #
 # If you prefer a google search form, here's an example that should just work:
 # SEARCH_FORM = """
@@ -692,7 +692,7 @@ UNSLUGIFY_TITLES = True
 # Nikola supports Open Graph Protocol data for enhancing link sharing and
 # discoverability of your site on Facebook, Google+, and other services.
 # Open Graph is enabled by default.
-# USE_OPEN_GRAPH = True
+USE_OPEN_GRAPH = True
 
 # Nikola supports Twitter Card summaries
 # Twitter cards are disabled by default. They make it possible for you to
