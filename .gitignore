@@ -1,6 +1,3 @@
-# Virtualenv
-ENV/
-
 *.py[cod]
 
 .pyenv-version
@@ -8,5 +5,5 @@ ENV/
 
 .doit.db*
 
-cache
-output
+cache/
+output/
