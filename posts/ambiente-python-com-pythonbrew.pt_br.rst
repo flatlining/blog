@@ -1,14 +1,16 @@
-.. link:
-.. description: Como preparar um ambiente de desenvolvimento python no ubuntu de forma simples e direta
-.. tags: python, linux, desenvolvimento
-.. date: 2013/02/24 20:05:33
 .. title: Ambiente Python com Pythonbrew
 .. slug: ambiente-python-com-pythonbrew
+.. date: 24-02-2013 20:05:33 UTC-03:00
+.. tags: python, linux, desenvolvimento
+.. link:
+.. description: Como preparar um ambiente de desenvolvimento python no ubuntu de forma simples e direta
+.. type: text
 
 .. http://docutils.sourceforge.net/docs/user/rst/quickref.html
 
 .. role:: console(code)
     :language: console
+
 
 Neste artigo será mostrado de forma simples e direta como criar um ambiente de desenvolvimento python_ no ubuntu_ utilizando as ferramentas pythonbrew_ e virtualenv_.
 

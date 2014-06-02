@@ -1,6 +1,6 @@
 .. title: Use WebP images in your site using .htaccess
 .. slug: use-webp-images-in-your-site-using-htaccess
-.. date: 2014/04/27 23:27:27
+.. date: 27-04-2014 23:27:27 UTC-03:00
 .. tags: web, development, htaccess
 .. link: https://developers.google.com/speed/webp/
 .. description: How to serve webp images in your site to supported browser using .htaccess
@@ -8,6 +8,7 @@
 
 .. role:: console(code)
     :language: console
+
 
 WebP_ is a fairly new image format under development by Google_ with the intent of creating smaller files without losing quality. A WebP file is about 34% smaller than a visual equivalent JPEG, while also supporting transparency by the use of alpha channels.
 

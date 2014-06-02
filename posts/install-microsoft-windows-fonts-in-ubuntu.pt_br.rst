@@ -1,6 +1,6 @@
 .. title: Instalando fontes do Microsoft Windows no Ubuntu
 .. slug: instalando-fontes-do-microsoft-windows-no-ubuntu
-.. date: 2014/04/26 23:08:23
+.. date: 26-04-2014 23:08:23 UTC-03:00
 .. tags: linux, ubuntu, fonte
 .. link: http://packages.ubuntu.com/lucid/ttf-mscorefonts-installer
 .. description: Instale facilmente as fontes do Microsoft Windows no Ubuntu utilizando o apt-get
@@ -8,6 +8,7 @@
 
 .. role:: console(code)
     :language: console
+
 
 Para instalar as principais fontes do Windows usando :console:`apt-get` execute o seguinte código em uma janela de terminal:
 

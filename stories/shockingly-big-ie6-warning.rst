@@ -1,10 +1,11 @@
-.. link: http://wordpress.org/plugins/shockingly-big-ie6-warning/
-.. description: A shockingly BIG or SMALL warning popup with customizable message about the dangers of using IE6. And now an option to crash IE6
-.. category: wordpress
-.. tags: wordpress, plug-in
-.. date: 2013/12/31 17:11:34
 .. title: Shockingly Big IE6 Warning
 .. slug: shockingly-big-ie6-warning
+.. date: 31-12-2013 17:11:34 UTC-03:00
+.. tags: wordpress, plug-in
+.. link: http://wordpress.org/plugins/shockingly-big-ie6-warning/
+.. description: A shockingly BIG or SMALL warning popup with customizable message about the dangers of using IE6. And now an option to crash IE6
+.. type: text
+
 
 The `Internet Explorer 6`_ was released in 2001 and nowadays it is still largely used (almost 25% market share). Despite any anti-microsoft fanatism IE6 is by far the most buggy, unsecure, off the standards, and not to mention obsolete (8 years people!) web browser ever made.
 

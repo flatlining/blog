@@ -1,6 +1,6 @@
 .. title: GIT: Adding files to your last commit!
 .. slug: git-adding-files-to-your-last-commit
-.. date: 2014/04/26 23:51:44
+.. date: 26-04-2014 23:51:44 UTC-03:00
 .. tags: git, development
 .. link: http://lostechies.com/derickbailey/2010/06/09/git-oops-i-forgot-to-add-those-new-files-before-committing/
 .. description: Easily add missing files t your last GIT commit
@@ -8,6 +8,7 @@
 
 .. role:: console(code)
     :language: console
+
 
 More than once when using git_ I forgot to add a file to a commit, like with this post:
 

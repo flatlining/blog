@@ -1,11 +1,10 @@
 .. title: Configuring Arch Linux on the Raspberry Pi
 .. slug: configuring-arch-linux-on-the-raspberry-pi
-.. date: 2014/04/09 22:51:43
+.. date: 09-04-2014 22:51:43 UTC-03:00
 .. tags: raspberry pi, arch, linux, draft
 .. link:
 .. description:
 .. type: text
-
 
 .. https://wiki.archlinux.org/index.php/Raspberry_Pi
 .. http://elinux.org/ArchLinux_Install_Guide
@@ -13,6 +12,7 @@
 
 .. role:: console(code)
     :language: console
+
 
 On the :doc:`previous <writing-and-reading-image-files-for-the-raspberry-pi>` post we saw how to write the `Arch Linux ARM`_ to be use with the `Raspberry Pi`_.
 

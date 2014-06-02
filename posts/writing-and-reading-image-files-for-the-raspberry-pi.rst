@@ -1,16 +1,16 @@
 .. title: Writing and reading image files for the Raspberry Pi
 .. slug: writing-and-reading-image-files-for-the-raspberry-pi
-.. date: 2014/03/08 18:24:16
+.. date: 08-03-2014 18:24:16 UTC-03:00
 .. tags: raspberry pi, linux, OS
 .. link:
 .. description:
 .. type: text
 
-
 .. http://elinux.org/RPi_Easy_SD_Card_Setup
 
 .. role:: console(code)
     :language: console
+
 
 The `Raspberry Pi`_ is this small cool ARM based board that you can use for endless projects and is compatible with many GNU/Linux distributions!
 

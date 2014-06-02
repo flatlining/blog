@@ -1,6 +1,6 @@
 .. title: GIT: Adicionando arquivos ao seu último commit!
 .. slug: git-adicionando-arquivos-ao-seu-ultimo-commit
-.. date: 2014/04/26 23:51:44
+.. date: 26-04-2014 23:51:44 UTC-03:00
 .. tags: git, desenvolvimento
 .. link: http://lostechies.com/derickbailey/2010/06/09/git-oops-i-forgot-to-add-those-new-files-before-committing/
 .. description: Adicione facilmente arquivos ao último commit do GIT
@@ -8,6 +8,7 @@
 
 .. role:: console(code)
     :language: console
+
 
 Mais de uma vez ao utilizar o git_ eu esqueci de adicionar um arquivo à um commit, como no exemplo:
 

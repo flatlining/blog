@@ -1,10 +1,10 @@
-.. link: http://steamcommunity.com/app/221410/discussions/7/846939071149987459/#c846939071182282142
-.. description: Tutorial de como instala o Steam na pasta home do seu usuário no linux, evitando assim o acesso a permissões desnecessárias
-.. tags: linux, games, steam
-.. date: 2013/06/24 00:29:46
 .. title: Instalando o Steam localmente no GNU/Linux
 .. slug: instalando-o-steam-localmente-no-gnulinux
-
+.. date: 24-06-2013 00:29:46 UTC-03:00
+.. tags: linux, games, steam
+.. link: http://steamcommunity.com/app/221410/discussions/7/846939071149987459/#c846939071182282142
+.. description: Tutorial de como instala o Steam na pasta home do seu usuário no linux, evitando assim o acesso a permissões desnecessárias
+.. type: text
 
 .. http://docutils.sourceforge.net/docs/user/rst/quickref.html
 .. http://docutils.sourceforge.net/docs/ref/rst/directives.html
@@ -13,6 +13,7 @@
 
 .. role:: console(code)
     :language: console
+
 
 Já faz um tempo que o Steam_, plataforma de distribuição de jogos da Valve_, teve sua versão para GNU/Linux lançada trazendo com ela diversos títulos que antes estavam somente disponíveis para outros sistemas operacionais.
 

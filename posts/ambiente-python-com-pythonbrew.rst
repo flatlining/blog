@@ -1,15 +1,16 @@
-.. link:
-.. description: A simple and direct approach on the creation of a python development environment using ubuntu and the pythonbrew and virtualenv tools
-.. tags: python, linux, development
-.. date: 2013/02/24 20:05:33
 .. title: Python environment with Pythonbrew
 .. slug: python-environment-with-pythonbrew
-
+.. date: 24-02-2013 20:05:33 UTC-03:00
+.. tags: python, linux, development
+.. link:
+.. description: A simple and direct approach on the creation of a python development environment using ubuntu and the pythonbrew and virtualenv tools
+.. type: text
 
 .. http://docutils.sourceforge.net/docs/user/rst/quickref.html
 
 .. role:: console(code)
     :language: console
+
 
 In this articles a simple and direct approach on the creation of a python_ development environment using ubuntu_ and the pythonbrew_ and virtualenv_ tools.
 
