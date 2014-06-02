@@ -1,3 +1,6 @@
+# Deploy
+blog.tar.gz
+
 *.py[cod]
 
 .pyenv-version

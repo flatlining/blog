@@ -284,7 +284,10 @@ REDIRECTIONS = []
 # And then do a backup, or run `nikola ping` from the `ping`
 # plugin (`nikola install_plugin ping`).
 # To do manual deployment, set it to []
-# DEPLOY_COMMANDS = []
+DEPLOY_COMMANDS = ["tar -zcvf blog.tar.gz -C output/ ."]
+# http://www.cyberciti.biz/faq/how-do-i-compress-a-whole-linux-or-unix-directory/
+# tar -zcvf prog-1-jan-2005.tar.gz /home/jerry/prog
+# tar -zxvf prog-1-jan-2005.tar.gz
 
 # For user.github.io/organization.github.io pages, the DEPLOY branch
 # MUST be 'master', and 'gh-pages' for other repositories.
