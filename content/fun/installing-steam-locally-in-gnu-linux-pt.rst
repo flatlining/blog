@@ -1,39 +1,35 @@
-.. title: Instalando o Steam localmente no GNU/Linux
-.. slug: instalando-o-steam-localmente-no-gnulinux
-.. date: 24-06-2013 00:29:46 UTC-03:00
-.. tags: linux, games, steam
-.. link: http://steamcommunity.com/app/221410/discussions/7/846939071149987459/#c846939071182282142
-.. description: Tutorial de como instala o Steam na pasta home do seu usuário no linux, evitando assim o acesso a permissões desnecessárias
-.. type: text
+Instalando o Steam localmente no GNU/Linux
+##########################################
 
-.. http://docutils.sourceforge.net/docs/user/rst/quickref.html
-.. http://docutils.sourceforge.net/docs/ref/rst/directives.html
-.. http://rst.ninjs.org/
-.. https://gist.github.com/dupuy/1855764
+:status: published
+:date: 2013-06-24T03:00-03:00
+:modified: 2013-06-24T03:00-03:00
+:tags: linux, ubuntu, steam, games
+:slug: installing-steam-locally-in-gnu-linux
+:lang: pt
+:authors: Matias S.
+:summary: Instale o Steam na pasta home do seu usuário no linux, evitando assim o acesso a permissões desnecessárias
 
 .. role:: console(code)
-    :language: console
-
+   :language: console
 
 Já faz um tempo que o Steam_, plataforma de distribuição de jogos da Valve_, teve sua versão para GNU/Linux lançada trazendo com ela diversos títulos que antes estavam somente disponíveis para outros sistemas operacionais.
 
 Porém como sou meio paranóico optei por instala-lo na minha pasta :console:`$HOME` evitando assim qualquer permissão de acesso desnecessária (*root-less*). Já venho utilizando-o dessa forma faz algum tempo, sem nenhum contratempo.
 
-.. TEASER_END
-
 A Receita
 =========
 
+.. figure:: {filename}/images/installing-steam-locally-in-gnu-linux-screenshot.png
+   :target: {filename}/images/installing-steam-locally-in-gnu-linux-screenshot.png
+   :width: 100%
+   :align: center
+   :alt: Steam no Linux
+
+   Steam no Linux
+
 Dependências
 ------------
-
-.. figure:: /images/instalando-o-steam-localmente-no-gnulinux-screenshot.png
-   :target: /images/instalando-o-steam-localmente-no-gnulinux-screenshot.png
-   :figwidth: 300 px
-   :align: right
-   :alt: Steam On Linux
-
-   Steam On Linux
 
 Use seu gerenciador de pacotes preferido e certifique-se que as seguintes dependências estão instaladas:
 
@@ -55,34 +51,31 @@ Crie um diretório temporário e copie o instalador para ele (e.g.: :console:`~/
 
 Extraia o conteúdo do instalador:
 
-.. code:: console
+.. code-block:: console
 
-    $ ar x steam.deb
+   $ ar x steam.deb
 
 Extraia os dados do arquivo :console:`data.tar.gz`:
 
-.. code:: console
+.. code-block:: console
 
-    $ tar xf data.tar.gz
+   $ tar xf data.tar.gz
 
 Extraia agora o Steam_ para seu diretório de preferência (e.g.: :console:`~/steam/`):
 
-.. code:: console
+.. code-block:: console
 
-    $ tar xf ~/temp/usr/lib/steam/bootstraplinux_ubuntu12_32.tar.xz ~/steam/
+   $ tar xf ~/temp/usr/lib/steam/bootstraplinux_ubuntu12_32.tar.xz ~/steam/
 
 Finalmente acesse o diretório :console:`~/steam/` e execute o Steam_ com o comando:
 
-.. code:: console
+.. code-block:: console
 
-    $ ./steam.sh
+   $ ./steam.sh
 
 Na primeira execução ele ira fazer o download dos arquivos necessários e em seguida estará pronto para uso!
 
 ----
-
-Referências
-===========
 
 .. [1] https://github.com/ValveSoftware/steam-for-linux
 

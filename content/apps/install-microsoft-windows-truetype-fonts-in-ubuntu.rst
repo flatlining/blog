@@ -1,22 +1,23 @@
-.. title: Install Microsoft Windows fonts in Ubuntu
-.. slug: install-microsoft-windows-fonts-in-ubuntu
-.. date: 01-06-2014 20:29:46 UTC-03:00
-.. tags: linux, ubuntu, font
-.. link: http://packages.ubuntu.com/lucid/ttf-mscorefonts-installer
-.. description: Easily install Microsoft Windows fonts in Ubuntu using apt-get
-.. type: text
+Install Microsoft Windows truetype fonts in Ubuntu
+##################################################
+
+:status: published
+:date: 2014-06-01T20:29-03:00
+:modified: 2014-06-01T20:29-03:00
+:tags: linux, ubuntu
+:slug: install-microsoft-windows-truetype-fonts-in-ubuntu
+:lang: en
+:authors: Matias S.
+:summary: Easily install Microsoft Windows fonts in Ubuntu using apt-get
 
 .. role:: console(code)
-    :language: console
-
+   :language: console
 
 To install Microsoft core fonts easy using :console:`apt-get` enter the following in a terminal window:
 
-.. code:: console
+.. code-block:: console
 
-    $ sudo apt-get install ttf-mscorefonts-installer
-
-.. TEASER_END
+   $ sudo apt-get install ttf-mscorefonts-installer
 
 This command will install the following true type fonts commonly present in Windows:
 

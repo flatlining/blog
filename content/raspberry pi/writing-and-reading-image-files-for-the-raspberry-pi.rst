@@ -1,22 +1,23 @@
-.. title: Writing and reading image files for the Raspberry Pi
-.. slug: writing-and-reading-image-files-for-the-raspberry-pi
-.. date: 08-03-2014 18:24:16 UTC-03:00
-.. tags: raspberry pi, linux, OS
-.. link:
-.. description:
-.. type: text
+Writing and reading image files for the Raspberry Pi
+####################################################
+
+:status: published
+:date: 2014-03-08T18:24-03:00
+:modified: 2014-03-08T18:24-03:00
+:tags: linux
+:slug: writing-and-reading-image-files-for-the-raspberry-pi
+:lang: en
+:authors: Matias S.
+:summary:
 
 .. http://elinux.org/RPi_Easy_SD_Card_Setup
 
 .. role:: console(code)
-    :language: console
-
+   :language: console
 
 The `Raspberry Pi`_ is this small cool ARM based board that you can use for endless projects and is compatible with many GNU/Linux distributions!
 
 It main storage is a simple SD card that goes into a slot in the board and in this card is where you must install the linux distro you choose to use.
-
-.. TEASER_END
 
 Attention
     In this article, to exemplify the installation of a distro, we will use the `ARM`_ compatible version of `Arch Linux`_, being installed in a Ubuntu environment.
@@ -47,23 +48,23 @@ To write an image file to a SD card follow these steps:
 
 6. Unmount the card with the command:
 
-   .. code:: console
+   .. code-block:: console
 
-       $ sudo umount /dev/mmcblk0
+      $ sudo umount /dev/mmcblk0
 
 7. To write the image to the card use:
 
-   .. code:: console
+   .. code-block:: console
 
-       $ sudo dd bs=1M if=archlinux-hf-*.img of=/dev/mmcblk0
+      $ sudo dd bs=1M if=archlinux-hf-*.img of=/dev/mmcblk0
 
 8. It could take a while, so *relax*.
 
 9. After is done run the command :console:`sync` to ensure the cache is flushed and it safe to remove the card:
 
-   .. code:: console
+   .. code-block:: console
 
-       $ sudo sync
+      $ sudo sync
 
 10. Remove it, insert it in the Pi.
 
@@ -86,15 +87,15 @@ And backing it up is pretty similar to how we write it in the first place:
 
 4. Now, use the :console:`dd` command to write an image of the card to a file:
 
-   .. code:: console
+   .. code-block:: console
 
-       $ sudo dd bs=1M if=/dev/path_to_card of=mylinux.image
+      $ sudo dd bs=1M if=/dev/path_to_card of=mylinux.image
 
 5. Execute the :console:`sync` to flush the cache:
 
-   .. code:: console
+   .. code-block:: console
 
-       $ sudo sync
+      $ sudo sync
 
 6. Remove your card.
 
