@@ -64,10 +64,16 @@ GOOGLE_ANALYTICS = None
 TYPOGRIFY = True
 
 # Extra
-STATIC_PATHS = ['images', 'extra/favicon.ico', 'extra/.htaccess']
+STATIC_PATHS = ['images',
+                'extra/favicon.ico',
+                'extra/.htaccess',
+                'extra/google192605e03dbd9de4.html']
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
-    'extra/.htaccess': {'path': '.htaccess'},}
+    'extra/.htaccess': {'path': '.htaccess'},
+    'extra/google192605e03dbd9de4.html': {'path': 'google192605e03dbd9de4.html'},}
+
+READERS = {'html': None}
 
 # Pagination
 # https://github.com/getpelican/pelican/issues/1137
