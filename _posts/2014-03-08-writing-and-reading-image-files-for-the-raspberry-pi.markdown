@@ -11,7 +11,7 @@ The [Raspberry Pi](http://www.raspberrypi.org/) is this small cool ARM based boa
 
 It main storage is a simple SD card that goes into a slot in the board and in this card is where you must install the linux distro you choose to use.
 
-Attention  
+Attention
 : In this article, to exemplify the installation of a distro, we will use the [ARM](https://en.wikipedia.org/wiki/ARM_architecture) compatible version of [Arch Linux](http://archlinuxarm.org/platforms/armv6/raspberry-pi), being installed in a Ubuntu environment.
 
 ## Writing the image
@@ -23,7 +23,7 @@ To write an image file to a SD card follow these steps:
    - [MD5 sum](http://archlinuxarm.org/os/ArchLinuxARM-rpi-latest.zip.md5)
 1. Extract the zip file to your hard drive, giving you the image **archlinux-hf-\*.img**.
 1. Open a terminal window and go the the directory where the image was extracted.
-1. Insert the card in your computer (at least 2GB\[1\]).
+1. Insert the card in your computer (at least 2GB[^1]).
 1. Find out the path to the card:
    1. With the command `df -h` list all mounted partitions.
    1. Your card partition will be listed as something like **/dev/mmcblk0p1**.
@@ -70,3 +70,7 @@ That's it! Now you have a full backup of your customized system, if you have any
 
 Attention
 : The generated image can only be written to a card with the same (or larger) size, so the backup of a 4GB card can be written to a 8GB card, but not to a 2GB one.
+
+---
+
+[^1]: Each system have it's own minimum space spec, make sure to check it in the systems site

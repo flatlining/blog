@@ -32,7 +32,7 @@ First, with the help of you distro package manager make sure the following depen
 
 ### Installation
 
-Then, get the installer from the [official site](http://store.steampowered.com/about/) or download the [.deb](http://en.wikipedia.org/wiki/Deb_\(file_format\)) from Valve's [repository](http://media.steampowered.com/client/installer/steam.deb) as pointed out in their [github page](https://github.com/ValveSoftware/steam-for-linux).
+Then, get the installer from the [official site](http://store.steampowered.com/about/) or download the [.deb](http://en.wikipedia.org/wiki/Deb_\(file_format\)) from Valve's [repository](http://media.steampowered.com/client/installer/steam.deb) as pointed out in their github page[^1].
 
 Copy the installer to a temporary folder (e.g.: `~/temp/`), and extract it:
 
@@ -59,3 +59,7 @@ $ ./steam.sh
 ```
 
 In the first run all the necessary files will be downloaded and soon it will be ready for game!
+
+---
+
+[^1]: <https://github.com/ValveSoftware/steam-for-linux>

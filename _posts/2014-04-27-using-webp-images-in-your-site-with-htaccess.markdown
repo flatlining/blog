@@ -9,7 +9,7 @@ tags: [web]
 
 [WebP](https://developers.google.com/speed/webp/) is a fairly new image format under development by [Google](https://developers.google.com/products/) with the intent of creating smaller files without losing quality. A WebP file is about 34% smaller than a visual equivalent JPEG, while also supporting transparency by the use of alpha channels.
 
-Currently only a few [browsers support](https://en.wikipedia.org/wiki/WebP#Support) the format, making a big risk to simply to simply convert all image in your site. So a more subtle approach is required, one that is invisible to your site's visitor, thats where [.htaccess](https://en.wikipedia.org/wiki/Htaccess) comes in handy.
+Currently only a few browsers[^1] support the format, making a big risk to simply to simply convert all image in your site. So a more subtle approach is required, one that is invisible to your site's visitor, thats where [.htaccess](https://en.wikipedia.org/wiki/Htaccess) comes in handy.
 
 ## Adapting your site
 
@@ -28,7 +28,7 @@ drwxrwxr-x 3 4096 Abr 27 02:44 ..
 -rw-rw-r-- 1 44832 Abr 27 02:08 instalando-o-steam-localmente-no-gnulinux-screenshot.webp
 ```
 
-For that we will use the libwebp set of tools, more specifically the `cwebp` program, available for Windows, OSx and Linux and can be downloaded as [precompiled](https://developers.google.com/speed/webp/docs/precompiled) [binaries](https://chromium.googlesource.com/webm/libwebp/), but on Ubuntu its easy as using `apt-get`:
+For that we will use the libwebp set of tools, more specifically the `cwebp` program, available for Windows, OSx and Linux and can be downloaded as [precompiled](https://developers.google.com/speed/webp/docs/precompiled) binaries[^2], but on Ubuntu its easy as using `apt-get`:
 
 ```console
 $ sudo apt-get install webp
@@ -66,7 +66,7 @@ Now that our images are converted how can we serve them? If we simply replace th
 
 Thats where htaccess file comes in, by creating a rewrite rule that that everytime a image is requested will check if the requesting browser support the new format, and if so will profile the WebP file instead of the original requested.
 
-So, create a `.htaccess` in your sites root directory (if there isnt one already) and add the [following lines](http://mikevoermans.com/apache/serving-right-image-htaccess-webp):
+So, create a `.htaccess` in your sites root directory (if there isnt one already) and add the following lines[^3]:
 
 ```apacheconf
 <IfModule mod_rewrite.c>
@@ -102,3 +102,9 @@ Tip
 With many new formats like [MNG](https://en.wikipedia.org/wiki/Multiple-image_Network_Graphics), the some what old [JPEG 2000](https://en.wikipedia.org/wiki/JPEG_2000) and the new [JPEG XR](https://en.wikipedia.org/wiki/JPEG_XR) fighting along [WebP](https://developers.google.com/speed/webp/) for the place of image format of choice for the web, the future is uncertain, but having a giant like [Google](https://developers.google.com/products/) as supporter cetantly gives [WebP](https://developers.google.com/speed/webp/) a good start.
 
 Lets wait to see what the future holds for web development!
+
+---
+
+[^1]: WebP web browser [support](https://en.wikipedia.org/wiki/WebP#Support) list
+[^2]: libwebp [source](https://chromium.googlesource.com/webm/libwebp/) is also available
+[^3]: [Serving Up the Right Image](http://mikevoermans.com/apache/serving-right-image-htaccess-webp)

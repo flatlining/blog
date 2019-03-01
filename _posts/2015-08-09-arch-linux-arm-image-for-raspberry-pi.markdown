@@ -16,7 +16,7 @@ Currently neither [Raspberry Pi](https://www.raspberrypi.org/) nor the [Arch Lin
     ```console
     $ dd if=/dev/zero of=arch.img bs=1M count=1850
     ```
-1.  Partition the image [file](http://archlinuxarm.org/platforms/armv6/raspberry-pi):
+1.  Partition the image file[^1]:
     ```console
     $ fdisk arch.img
     ```
@@ -30,7 +30,7 @@ Currently neither [Raspberry Pi](https://www.raspberrypi.org/) nor the [Arch Lin
     ```console
     $ fdisk -l arch.img
     ```
-1.  Mount the **boot** [partition](http://unix.stackexchange.com/a/72449):
+1.  Mount the **boot** partition[^2]:
     ```console
     $ losetup -v -f -o $((2048 * 512)) --sizelimit 104857600 arch.img
     ```
@@ -80,3 +80,8 @@ Currently neither [Raspberry Pi](https://www.raspberrypi.org/) nor the [Arch Lin
    ```
 
 Your image is ready to be used!
+
+---
+
+[^1]: [Raspberry Pi, SD Card Creation](http://archlinuxarm.org/platforms/armv6/raspberry-pi)
+[^2]: [Calculate offset and sizelimit of a partition](http://unix.stackexchange.com/a/72449)
