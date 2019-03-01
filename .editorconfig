@@ -1,0 +1,11 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+[{*.md,*.markdown}]
+charset = utf-8
+trim_trailing_whitespace = true
