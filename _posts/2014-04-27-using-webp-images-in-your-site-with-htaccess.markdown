@@ -40,9 +40,8 @@ Then convert the desired images using:
 $ cwebp image_file.jpg -o image_file.webp
 ```
 
-> Attention
->
-> The output file must have the same name of the input file.
+Attention
+: The output file must have the same name of the input file.
 
 There are many other parameters to fine tune the conversions see the `--longhep` of `cwebp` for more options, one that is really usefull is the `-preset` a serie of preset (duh) values for the most common scenarios, e.g.:
 
@@ -95,9 +94,8 @@ To make sure if its working open Chrome [DevTools](https://developers.google.com
 
 ![With support to WebP](/assets/using-webp-images-on-your-site-with-htaccess-with.png)
 
-> Tip
->
-> Its a go idea to test the site in a browser that lacks support, Internet Explorer for example.
+Tip
+: Its a go idea to test the site in a browser that lacks support, Internet Explorer for example.
 
 ## The Future
 

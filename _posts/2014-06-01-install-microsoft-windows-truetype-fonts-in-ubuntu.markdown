@@ -27,6 +27,5 @@ This command will install the following true type fonts commonly present in Wind
 - Verdana (Bold, Italic, Bold Italic)
 - Webdings
 
-> Tip
->
-> You can also use the **Ubuntu Software Center**.
+Tip
+: You can also use the **Ubuntu Software Center**.

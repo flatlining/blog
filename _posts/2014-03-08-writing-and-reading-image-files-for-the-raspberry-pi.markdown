@@ -11,9 +11,8 @@ The [Raspberry Pi](http://www.raspberrypi.org/) is this small cool ARM based boa
 
 It main storage is a simple SD card that goes into a slot in the board and in this card is where you must install the linux distro you choose to use.
 
-> Attention  
->
-> In this article, to exemplify the installation of a distro, we will use the [ARM](https://en.wikipedia.org/wiki/ARM_architecture) compatible version of [Arch Linux](http://archlinuxarm.org/platforms/armv6/raspberry-pi), being installed in a Ubuntu environment.
+Attention  
+: In this article, to exemplify the installation of a distro, we will use the [ARM](https://en.wikipedia.org/wiki/ARM_architecture) compatible version of [Arch Linux](http://archlinuxarm.org/platforms/armv6/raspberry-pi), being installed in a Ubuntu environment.
 
 ## Writing the image
 
@@ -69,6 +68,5 @@ And backing it up is pretty similar to how we write it in the first place:
 
 That's it! Now you have a full backup of your customized system, if you have any problem just write it to a card line we did in the first part of this article and it will be as good as new!
 
-> Attention
->
-> The generated image can only be written to a card with the same (or larger) size, so the backup of a 4GB card can be written to a 8GB card, but not to a 2GB one.
+Attention
+: The generated image can only be written to a card with the same (or larger) size, so the backup of a 4GB card can be written to a 8GB card, but not to a 2GB one.
