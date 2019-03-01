@@ -15,7 +15,7 @@ I've been using it like this for quite a while, with no noticeable downside.
 
 ## How-to
 
-![Steam on Linux](/assets/installing-steam-locally-in-gnu-linux-screenshot.png)
+![Steam on Linux]({{ "/assets/install-steam-locally-in-gnu-linux-screenshot.png" | relative_url }})
 
 ### Dependencies
 

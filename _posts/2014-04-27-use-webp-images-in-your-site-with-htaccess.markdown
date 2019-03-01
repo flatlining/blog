@@ -90,9 +90,9 @@ AddType image/webp .webp
 
 To make sure if its working open Chrome [DevTools](https://developers.google.com/chrome-developer-tools/) (`SHIFT + CTRL + I`) select the **Network** tab and load an image of your site and compare the **Type** column with and without the htaccess rule, i.e:
 
-![Without support to WebP](/assets/using-webp-images-on-your-site-with-htaccess-without.png)
+![Without support to WebP]({{ "/assets/use-webp-images-on-your-site-with-htaccess-without.png" | relative_url }})
 
-![With support to WebP](/assets/using-webp-images-on-your-site-with-htaccess-with.png)
+![With support to WebP]({{ "/assets/use-webp-images-on-your-site-with-htaccess-with.png" | relative_url }})
 
 Tip
 : Its a go idea to test the site in a browser that lacks support, Internet Explorer for example.
