@@ -2,8 +2,8 @@
 layout: post
 title:  "Install Microsoft Windows truetype fonts in Ubuntu"
 date:   2014-06-01 20:29 -0300
-categories: software
-tags: linux, ubuntu
+categories: [software]
+tags: [linux,ubuntu]
 ---
 To install Microsoft core fonts easy using `apt-get` enter the following
 in a terminal window:
@@ -27,6 +27,6 @@ in Windows:
 - Verdana (Bold, Italic, Bold Italic)
 - Webdings
 
-# Tip
-
+> Tip
+>
 > You can also use the **Ubuntu Software Center**.
