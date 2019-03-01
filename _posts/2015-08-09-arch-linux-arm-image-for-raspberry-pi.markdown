@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Arch Linux ARM image for Raspberry Pi"
+author: Matias S.
 date:   2015-08-09 23:51 -0300
 categories: [raspberry pi]
 tags: [linux,arch]

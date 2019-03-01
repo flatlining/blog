@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Install Microsoft Windows truetype fonts in Ubuntu"
+author: Matias S.
 date:   2014-06-01 20:29 -0300
 categories: [software]
 tags: [linux,ubuntu]

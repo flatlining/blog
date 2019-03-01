@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Adding files to your last GIT commit"
+author: Matias S.
 date:   2014-04-26 23:51 -0300
 categories: [development]
 tags: [git]
