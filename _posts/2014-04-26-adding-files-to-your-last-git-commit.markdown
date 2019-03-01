@@ -5,8 +5,8 @@ date:   2014-04-26 23:51 -0300
 categories: [development]
 tags: [git]
 ---
-More than once when using [git](http://git-scm.com/) I forgot to add a
-file to a commit, like with this post:
+
+More than once when using [git](http://git-scm.com/) I forgot to add a file to a commit, like with this post:
 
 ```console
 $ git status
@@ -40,10 +40,7 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-One terrible way to fix this is commiting the missing files and
-specifying the mistake in the commit message, another **awesome** way
-would be using the `--amend` parameter of the `commit` command to add
-the files to the last commit.
+One terrible way to fix this is commiting the missing files and specifying the mistake in the commit message, another **awesome** way would be using the `--amend` parameter of the `commit` command to add the files to the last commit.
 
 First stage the missing files:
 
@@ -61,11 +58,9 @@ $ git commit --amend -C HEAD
  create mode 100644 posts/git-adding-files-t-your-last-commit.rst.pt_br
 ```
 
-The `-C` tell the commit to use the commiting message of **HEAD**, if
-you omit the `-C HEAD` the message editor will open.
+The `-C` tell the commit to use the commiting message of **HEAD**, if you omit the `-C HEAD` the message editor will open.
 
-Note the we only have one commit with the message *en/pt\_br: GIT:
-Adding files to your last commit\!*:
+Note the we only have one commit with the message *en/pt_br: GIT: Adding files to your last commit!*:
 
 ```console
 $ git log

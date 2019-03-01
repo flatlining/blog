@@ -5,15 +5,14 @@ date:   2014-06-01 20:29 -0300
 categories: [software]
 tags: [linux,ubuntu]
 ---
-To install Microsoft core fonts easy using `apt-get` enter the following
-in a terminal window:
+
+To install Microsoft core fonts easy using `apt-get` enter the following in a terminal window:
 
 ```console
 $ sudo apt-get install ttf-mscorefonts-installer
 ```
 
-This command will install the following true type fonts commonly present
-in Windows:
+This command will install the following true type fonts commonly present in Windows:
 
 - Andale Mono
 - Arial Black
