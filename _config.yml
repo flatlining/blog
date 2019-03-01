@@ -41,7 +41,7 @@ permalink: none
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
+exclude:
 #   - Gemfile
 #   - Gemfile.lock
 #   - node_modules
@@ -49,3 +49,4 @@ permalink: none
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+  - README.md
