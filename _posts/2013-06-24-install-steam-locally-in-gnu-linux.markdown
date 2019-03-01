@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Installing Steam locally in GNU/Linux"
+title:  "Install Steam locally in GNU/Linux"
 author: Matias S.
 date:   2013-06-24 03:00 -0300
 categories: [fun]

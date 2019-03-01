@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Using WebP images in your site with .htaccess"
+title:  "Use WebP images in your site with .htaccess"
 author: Matias S.
 date:   2014-04-27 23:27 -0300
 categories: [development]

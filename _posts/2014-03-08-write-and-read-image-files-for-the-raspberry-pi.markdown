@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Writing and reading image files for the Raspberry Pi"
+title:  "Write and read image files for the Raspberry Pi"
 author: Matias S.
 date:   2014-03-08 18:24 -0300
 categories: [raspberry pi]
