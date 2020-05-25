@@ -29,13 +29,13 @@ end
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
 # https://github.com/jekyll/jekyll-redirect-from, for redirect_to
-gem 'jekyll-redirect-from'
+gem "jekyll-redirect-from", group: :jekyll_plugins
 
 # https://github.com/jekyll/jekyll-seo-tag
-gem 'jekyll-seo-tag'
+gem "jekyll-seo-tag", group: :jekyll_plugins
 
 # https://github.com/jekyll/jekyll-sitemap
-gem 'jekyll-sitemap'
+gem "jekyll-sitemap", group: :jekyll_plugins
 
 # https://github.com/jch/html-pipeline#dependencies
-gem 'rouge'
+gem "rouge", group: :jekyll_plugins
