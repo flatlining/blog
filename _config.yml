@@ -29,10 +29,18 @@ url: "https://schertel.dev" # the base hostname & protocol for your site, e.g. h
 twitter_username: flatlining
 github_username:  flatlining
 
+lsi: false
+safe: true
+
+whitelist:
+  - jekyll-feed
+  - jekyll-redirect-from
+
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
 
 timezone: America/Sao_Paulo
 
