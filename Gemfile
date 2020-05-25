@@ -34,5 +34,8 @@ gem 'jekyll-redirect-from'
 # https://github.com/jekyll/jekyll-seo-tag
 gem 'jekyll-seo-tag'
 
+# https://github.com/jekyll/jekyll-sitemap
+gem 'jekyll-sitemap'
+
 # https://github.com/jch/html-pipeline#dependencies
 gem 'rouge'

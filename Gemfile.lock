@@ -249,6 +249,7 @@ DEPENDENCIES
   jekyll-feed (~> 0.12)
   jekyll-redirect-from
   jekyll-seo-tag
+  jekyll-sitemap
   minima (~> 2.5)
   rouge
   tzinfo (~> 1.2)

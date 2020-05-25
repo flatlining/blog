@@ -36,6 +36,7 @@ whitelist:
   - jekyll-feed
   - jekyll-redirect-from
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Build settings
 theme: minima
@@ -43,6 +44,7 @@ plugins:
   - jekyll-feed
   - jekyll-redirect-from
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 timezone: America/Sao_Paulo
 
