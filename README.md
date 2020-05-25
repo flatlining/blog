@@ -1,5 +1,20 @@
 # blog
 
+## Usage
+
+### Dependencies
+
+```console
+$ bundle install
+# bundle update
+```
+
+### Run
+
+```console
+$ bundle exec jekyll serve
+```
+
 ## References
 
 - [jekyll](https://jekyllrb.com/)

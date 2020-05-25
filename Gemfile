@@ -31,5 +31,8 @@ gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 # https://github.com/jekyll/jekyll-redirect-from, for redirect_to
 gem 'jekyll-redirect-from'
 
+# https://github.com/jekyll/jekyll-seo-tag
+gem 'jekyll-seo-tag'
+
 # https://github.com/jch/html-pipeline#dependencies
 gem 'rouge'

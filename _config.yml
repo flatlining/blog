@@ -35,12 +35,14 @@ safe: true
 whitelist:
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-seo-tag
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-seo-tag
 
 timezone: America/Sao_Paulo
 
