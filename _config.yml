@@ -33,9 +33,6 @@ github_username:  flatlining
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-redirect-from
 
 timezone: America/Sao_Paulo
 
