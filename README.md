@@ -15,6 +15,12 @@ $ bundle install
 $ bundle exec jekyll serve
 ```
 
+Or:
+
+```console
+$ bundle exec jekyll serve --drafts
+```
+
 ## References
 
 - [jekyll](https://jekyllrb.com/)
