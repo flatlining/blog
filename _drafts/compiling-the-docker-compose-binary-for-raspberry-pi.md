@@ -21,3 +21,25 @@ But trying to install [docker-compose](https://docs.docker.com/compose/) using t
 But try to use it afterwards to see what happens, those keen on the eye will noticed that the download was only 9kb, the size of the `404 Not Found` the same returned when opening [https://github.com/docker/compose/releases/download/1.25.5/docker-compose-Linux-armv7l](https://github.com/docker/compose/releases/download/1.25.5/docker-compose-Linux-armv7l) in the browser, there are no [release](https://github.com/docker/compose/releases) builds for `arm` architecture.
 
 It is possible to install `docker-compose` using [pip](https://docs.docker.com/compose/install/#install-using-pip), but what if a pre-compiled binary is desired?
+
+## Compiling by yourself
+
+It's actually pretty simple to compile the `docker-compose` binary, the only requirement is a Raspberry Pi with a working `docker` installation.
+
+To build and install the 1.25.5 release:
+
+```sh
+# clone the repo
+$ git clone https://github.com/docker/compose.git
+$ cd compose
+# checkout the desired version
+$ git checkout 1.25.5
+# run the build script
+$ ./script/build/linux
+# wait a little while... and install it
+$ sudo mv dist/docker-compose-Linux-armv7l /usr/local/bin/docker-compose
+```
+
+The build script detects the host architecture and compile the binary using the correct docker images, `armhf` on the [Raspberry Pi 3 Model B+](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/).
+
+That's it! plain and simple! and don't forget to save it aside so it's easy to reuse it on other boards... because who only have **one** rPi? 🤣
