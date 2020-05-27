@@ -24,7 +24,7 @@ The download was only 9kb, it was not the expected binary, but the `404 Not Foun
 
 It'ss possible to install `docker-compose` using [pip](https://docs.docker.com/compose/install/#install-using-pip), but what if a pre-compiled binary is desired?
 
-## Compiling by yourself
+## Compiling
 
 It's actually pretty simple to compile the `docker-compose` binary, the only requirement is a Raspberry Pi with a working `docker` installation.
 
