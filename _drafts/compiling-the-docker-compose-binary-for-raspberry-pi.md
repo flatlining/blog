@@ -46,4 +46,6 @@ $ sudo mv dist/docker-compose-Linux-armv7l /usr/local/bin/docker-compose
 
 The build script detects the host architecture and compile the binary using the correct docker images, `armhf` on the [Raspberry Pi 3 Model B+](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/).
 
-That's it! plain and simple! and don't forget to save it aside so it's easy to reuse it on other boards... because who only has **one** rPi? 🤣
+That's it! plain and simple! and don't forget to save it aside so it's easy to reuse it on other boards... because who only has **one** rPi? I know I don't...
+
+![Raspberry Pi Home Lab Cluster]({{ "/assets/compiling-the-docker-compose-binary-for-raspberry-pi-compose-picluster.jpg" | relative_url }})
