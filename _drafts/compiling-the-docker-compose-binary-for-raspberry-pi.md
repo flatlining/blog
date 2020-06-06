@@ -6,9 +6,9 @@ categories: [container]
 tags: [linux,raspberry pi,arm,docker]
 ---
 
-We know the hassles of installing [docker](https://www.docker.com/) on a [Raspberry Pi](https://www.raspberrypi.org/) are mostly gone.
+Everyone knows the hassles of installing [docker](https://www.docker.com/) on a [Raspberry Pi](https://www.raspberrypi.org/) are mostly gone.
 
-Besides specialized distros like [dietpi](https://dietpi.com/) - where the installation is one command-line away - or [hypriot](https://blog.hypriot.com/) -, which comes with it preinstallled and optimized, the official documentation already includes instructions for using an official `arm` supported repository. 
+Besides specialized distros like [dietpi](https://dietpi.com/) - where the installation is one command-line away - or [hypriot](https://blog.hypriot.com/) -, which comes with it preinstallled and optimized, the official documentation already includes instructions for using an official `arm` supported repository.
 
 If you consider:
 
@@ -22,7 +22,7 @@ You'll see it returns an error. Maybe not, since the command fails without any v
 
 ![No visible error]({{ "/assets/compiling-the-docker-compose-binary-for-raspberry-pi-compose-install-error.png" | relative_url }})
 
-The download was only 9kb, the binary was not expected. Nevertheless, the `404 Not Found` error returned when accessing [https://github.com/docker/compose/releases/download/1.25.5/docker-compose-Linux-armv7l](https://github.com/docker/compose/releases/download/1.25.5/docker-compose-Linux-armv7l). There are no [release](https://github.com/docker/compose/releases) builds for `arm` architecture.
+The download was only 9kb, it was not the expected binary, but the `404 Not Found` error returned when accesing [https://github.com/docker/compose/releases/download/1.25.5/docker-compose-Linux-armv7l](https://github.com/docker/compose/releases/download/1.25.5/docker-compose-Linux-armv7l). There are no [release](https://github.com/docker/compose/releases) builds for `arm` architecture.
 
 It's possible to install `docker-compose` using [pip](https://docs.docker.com/compose/install/#install-using-pip), but what if a pre-compiled binary is desired?
 
