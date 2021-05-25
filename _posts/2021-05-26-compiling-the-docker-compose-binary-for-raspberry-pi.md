@@ -2,10 +2,18 @@
 layout: post
 title:  "Compiling the docker-compose binary for Raspberry Pi"
 author: Matias S.
-date:   2020-06-05 21:30 -0300
+date:   2021-05-26 00:03 +0200
 categories: [container]
 tags: [linux,raspberry pi,arm,docker]
 ---
+
+**Update on 2021-05-21:**
+
+> Although the method presented in this post still works as described for the version mentioned (1.25.5), for newer versions (e.g.: 1.29.2) changes in the cloned repo code are required.
+>
+> Because of that it is recommended to install `docker-compose` on a Raspberry Pi using the [pip](https://docs.docker.com/compose/install/#install-using-pip) alternative method.
+
+**Original post from 2020-06-05:**
 
 Everyone knows the hassles of installing [docker](https://www.docker.com/) on a [Raspberry Pi](https://www.raspberrypi.org/) are mostly gone.
 
